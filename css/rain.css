@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Montserrat:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1a1b1f;
+}
+
+#arrow-div{
+    display: flex;
+} 
+
+#arrow-div-2{
+    display: flex;
+} 
+
+#a-logo{
+    width: 10%;
+    margin-top: .5%;
+}
+
+#logo-img{
+    width: 100%;
+    margin-right: 0%;
+}
+
+#arrow-img{
+    transition: all 0.3s, ease 0.5s;
+    width: 13px;
+    margin-left: 50%;
+}
+
+#arrow-img-2{
+    transition: all 0.3s, ease 0.5s;
+    width: 17px;
+    margin-left: -9px;
+    opacity: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #24252A;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 29%;
+
+}
+
+.nav-links, li{
+    list-style: none;
+}
+
+.nav-links, a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Carter One", cursive;
+    font-weight: 500px;
+    color: #edf0f1;
+    transition: all 0.3s, ease 0.5s;
+}
+
+a:hover {
+    transition: all 0.3s, ease 0.5s;
+    color: #3F8CFF;
+}
+
+.dropdown{
+    display: flex;
+}
+
+.dropdown{
+    position: relative;
+} 
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding-top: 50px;
+    margin-top: 25px;
+    margin-right: 100px;
+    margin-left: -20px;
+    background: #24252A;
+    height: 40px;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    
+}
+
+.dropdown-itens{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.dropdown-menu:hover .dropdown{
+    color: #34bd74;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover #arrow-img{
+    transition: all 0.3s, ease 0.5s;
+    opacity: 0;
+    transform: rotate(180deg);
+}
+
+.dropdown:hover #arrow-img-2{
+    transition: all 0.3s, ease 0.5s;
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+
+/*--------------imagem, dentro da div, centralizada ---------------*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+#city-img{
+    width: 80%;
+    height: 80%;
+}
+
+/*--------------- rain -----------------*/
+
+.rain {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/japan-at-night.jpg);
+    opacity: 1;
+    filter: blur(2px);
+    background-size: cover;
+    animation: backgroundColor 5s linear infinite;
+ 
+}
+
+.rain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/rain.png);
+    filter: opacity(.5);
+    animation: rainAnimation 0.2s linear infinite;
+}
+
+@keyframes rainAnimation{
+    0%{
+        background-position: 0% 0%;
+    }
+
+    100%{
+        background-position: 15% 100%;
+    }
+
+
+}
+
+
+
+
+
+
+/* .container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container:before {
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+}
+
+.container:before {
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+}
+
+.container {
+    background: inherit;
+}
+ 
+.container:before {
+    background: inherit;
+} */
+
