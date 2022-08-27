@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calculator/calc.css">
+    <script type="text/javascript" charset="utf-8" src="/calculator/calc.js"></script>
+    <title>Calculator</title>
+</head>
+<body onLoad="clear()">
+    <form name="calc">
+        <div class="calculator">
+            <div class="calc-display">
+                <input type="text" name="display" class="display" value=""></input></br>
+            </div>
+
+            <div class="inside-calc">
+                <table class="buttons">
+                    <tr>
+                        <td><input id="clear-button" class="button" type="button" name="operator" value="C" onclick="onClick(value)"></input></td>
+                        <td><input id="division-button" class="button" type="button" name="operator" value="/" onclick="onClick(value)"></input></td>
+                        <td><input id="mult-button" class="button" type="button" name="operator" value="*" onclick="onClick(value)"></input></td>
+                        <td><input id="erase-1-button" class="button" type="button" name="operator" value="⌫" onclick="onClick(value)"></input></td>
+                    </tr>
+
+                    <tr>
+                        <td><input id="7-button" class="button" type="button" name="number" value="7" onclick="onClick(value)"></input></td>
+                        <td><input id="8-button" class="button" type="button" name="number" value="8" onclick="onClick(value)"></input></td>
+                        <td><input id="9-button" class="button" type="button" name="number" value="9" onclick="onClick(value)"></input></td>
+                        <td> <input id="sub-button" class="button " type="button" name="operator" value="-" onclick="onClick(value)"></input></td>
+                    </tr>
+
+                    <tr>
+                        <td><input id="4-button" class="button" type="button" name="number" value="4" onclick="onClick(value)"></input></td>
+                        <td><input id="5-button" class="button" type="button" name="number" value="5" onclick="onClick(value)"></input></td>
+                        <td><input id="6-button" class="button" type="button" name="number" value="6" onclick="onClick(value)"></input></td>
+                        <td><input id="add-button" class="button " type="button" name="operator" value="+" onclick="onClick(value)"></input></td>
+                    </tr>
+
+                    <tr>
+                        <td><input id="1-button" class="button" type="button" name="number" value="1" onclick="onClick(value)"></input></td>
+                        <td><input id="2-button" class="button" type="button" name="number" value="2" onclick="onClick(value)"></input></td>
+                        <td><input id="3-button" class="button" type="button" name="number" value="3" onclick="onClick(value)"></input></td>
+                        <td rowspan="2"><input id="equal-button" class="button" type="button" name="operator" value="=" onclick="onClick(value)"></input></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input id="0-button" class="button" type="button" name="number" value="0" onclick="onClick(value)"></input></td>
+                        <td><input id="comma-button" class="button " type="button" name="operator" value="," onclick="onClick(value)"></input></td>
+                    </tr>
+                </table> 
+            </div>
+        </div>
+    </form>
+</body>
+</html>
