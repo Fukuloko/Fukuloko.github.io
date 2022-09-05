@@ -2,7 +2,7 @@ let allContacts = [];
 let newContactObject;
 const tableHeader = `<tr><th class="bottom-header"></th><th class="theader">id</th><th class="theader">nome</th><th class="bottom-header">Contato</th></tr>`
 
-// localStorage.clear();
+localStorage.clear();
 
 function changeOpacity(){
     document.getElementById("lupa").style.transition = "opacity 0.8s";
