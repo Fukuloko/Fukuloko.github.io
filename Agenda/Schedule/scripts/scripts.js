@@ -92,7 +92,7 @@ function listContacts(){
     let dataHtml = table.innerHTML;
 
     for(let contact of objectList)
-        dataHtml += `<tr><td><div class="remove-button" onclick="removeContact(${contact.id})"><img class="remove-img" src="/Schedule/assets/remove.png" /></div></td><td class="cells">${contact.id}</td><td class="cells">${contact.nome}</td><td class="cells">${contact.cellphone}</td></tr>`;
+        dataHtml += `<tr><td><div class="remove-button" onclick="removeContact(${contact.id})"><img class="remove-img" src="/Agenda/Schedule/assets/remove.png" /></div></td><td class="cells">${contact.id}</td><td class="cells">${contact.nome}</td><td class="cells">${contact.cellphone}</td></tr>`;
     
     table.innerHTML = dataHtml;
 }
