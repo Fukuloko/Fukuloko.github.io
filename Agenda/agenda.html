@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Schedule/styles/new-contact.css">
+    <script src="/Schedule/scripts/scripts.js"></script>
+    <title>Schedule</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-style">
+            <div class="spacing">
+
+            </div>
+
+            <div class="container-img">
+                <div class="form-img">
+                    <img class="card-img" src="../Schedule/assets/user.png" alt="user.png">
+                </div>
+                
+                <div class="img-text">
+                   <br>Novo Contato
+                </div>
+            </div>
+        
+            <div class="form">
+                <div class="nav-bar">
+                    <a class="active" href="agenda.html">Inserir</a>
+                    <a id="list-contact" href="/Schedule/html/listar.html">Listar</a> 
+                    <input id="search-box" type="text" placeholder="Buscar" onclick="changeOpacity()" onkeyup="nameFilter()"></input>    
+                    <img id="lupa" src="/Schedule/assets/lupa.png" alt="">                         
+                </div>
+
+                <div class="input-group">
+                    <div class="title">
+                        <p>Insira um Novo Contato</p>
+                    </div>
+
+                    <div id="input-id-box" class="input-box">
+                        <label for="contact-id">Id </label>
+                        <input id="contact-id" type="text" name="contact-id" placeholder="id" required>
+                    </div>
+
+                    <div id="input-name-box" class="input-box">
+                        <label for="contact-name">Nome </label>
+                        <input id="contact-name" type="text" name="contact-name" placeholder="nome" required>
+                    </div>
+
+                    <div id="input-cel-box" class="input-box">
+                        <label for="contact-cel">Celular </label>
+                        <input id="contact-cel" type="text" name="contact-cel" placeholder="celular" required>
+                    </div>
+
+                    <div class="confirm-div">
+                        <button class="confirm-button" onclick="newContact()">Novo Contato</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

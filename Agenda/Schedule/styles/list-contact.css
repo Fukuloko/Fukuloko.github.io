@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap');
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b2a29;
+}
+
+.title{
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-family: 'Noto Serif Balinese', serif;
+    color: #E6D1AB;
+}
+
+.spacing{
+    width: 8%;
+    background-color: #665541;
+}
+
+
+.form{
+    width: 62%;
+    height: 79.2vh;
+    background-color: #665541;
+    border: 3px solid rgba(102, 85, 65, 0.4);
+}   
+
+.input-group{
+    /* display: inline-block; */
+    /* padding-top: 10%; */
+    height: 90%;
+    width: 95%;
+}
+
+.container{
+    width: 80%;
+}
+
+.card-style{
+    display: flex;
+    height: 80vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    outline: 10px solid #E6D1AB;
+    outline-offset: -40px;
+}
+
+.container-img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 35%; 
+    justify-content: center;
+    background-color: #E6D1AB;
+    /* padding: 2%;
+    margin: 4%; */
+}
+
+.card-img{
+    max-width: 75%;
+    height: auto;
+}
+
+.form-img img{
+    width: 60vh;
+}
+
+.form-img{
+    display: flex;
+    justify-content: center;
+}
+
+.img-text{
+    font-size: 35px;
+}
+
+.nav-bar{
+    /* padding-left: 23%; */
+    display: flex;
+    justify-content: center;
+    padding-right: 4%;
+}
+
+.nav-bar a:hover{
+    transition: ease 0.3s;
+    background-color: #3e3428;
+    color: #ecd5aa; 
+}
+
+.nav-bar a{
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 0px 15px;
+}
+
+a{
+    font-size: 17px;
+    font-family: 'Noto Serif Balinese', serif;
+    color: #E6D1AB;
+}
+
+.nav-bar a.active{
+    background-color: #E6D1AB;
+    color: #665541;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    font-family: 'Noto Serif Balinese', serif;
+    text-align: center;
+    color: #d4bf97;
+}
+
+table, td, th, tr{
+    overflow: none;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+.cells {
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+.theader{
+    border-right: 2px solid;
+}
+
+.theader, .bottom-header{
+    border-bottom: 2px solid #E6D1AB 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#list{
+    width: 100%;
+}
+
+.list-container{
+    width: 95%;
+}
+
+.space{
+    width: 0;
+}
+
+.remove-button, .remove-img{
+    float: top;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 5px;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+#search-box{
+    outline: none;
+    border: none;
+    background-color: #665541;
+    font-family: 'Noto Serif Balinese', serif;
+    color: #E6D1AB;
+    font-size: 17px;
+    padding: 0 15px;
+    width: 100px;
+}
+
+::placeholder{
+    color: #E6D1AB;
+}
+
+.nav-bar input[type=text]{
+     border: none;
+}
+
+#lupa{
+   width: 18px; 
+   height: 18px;
+   margin-top: 4px;
+   opacity: 0;
+   cursor: none;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Schedule/styles/list-contact.css">
+    <script src="/Schedule/scripts/scripts.js"></script>
+    <title>Schedule</title>
+</head>
+<body onload="listContacts()">
+    <div class="container">
+        <div class="card-style">
+            <div class="spacing">
+
+            </div>
+
+            <div class="container-img">
+                <div class="form-img">
+                    <img class="card-img" src="/Schedule/assets/list.png" alt="user.png">
+                    <!-- <a href="https://www.flaticon.com/br/icones-gratis/lista" title="lista ícones">Lista ícones criados por Freepik - Flaticon</a> -->
+                </div>
+                
+                <div class="img-text">
+                   <br>Todos os Contatos
+                </div>
+            </div>
+        
+            <div class="form">
+                <div class="nav-bar">
+                    <a href="/agenda.html">Inserir</a>
+                    <a class="active" href="/Schedule/html/listar.html">Listar</a> 
+                    <input id="search-box" type="text" placeholder="Buscar" onclick="changeOpacity()" onkeyup="nameFilter()"></input>    
+                    <img id="lupa" src="/Schedule/assets/lupa.png" alt="" onclick="nameFilter()">           
+                </div>
+
+
+                <div class="input-group">
+                    <div class="title">
+                        <p>Lista de Contatos</p>
+                    </div>
+
+                    <div class="list-container">
+                        <table id="list"> 
+                            <tr>
+                                <th class="bottom-header"></th>
+                                <th class="theader">id</th>
+                                <th class="theader">nome</th>
+                                <th class="bottom-header">Contato</th>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
