@@ -12,7 +12,7 @@ const CANVAS_HEIGHT = canvas.height = 600;
 let playerState = 'idle';
 
 const playerImage = new Image();
-playerImage.src = 'spritesheet2.png';
+playerImage.src = '/Jogo/spritesheet2.png';
 
 let x = 0;
 let y = 0;
